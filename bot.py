@@ -1,16 +1,7 @@
-# This is a sample Python script.
+from telegram.ext import Updater
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
-
-
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
-
-
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+def main():
+    my_bot = Updater("5252643142:AAHDdbzArzBqVCejtAYjL2nHAk3zPImAvJQ", "https://telegg.ru/orig/bot", use_context=True)
+    my_bot.start_polling()
+    my_bot.idle()
+main()
